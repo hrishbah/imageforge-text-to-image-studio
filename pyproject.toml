@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "imageforge"
+version = "0.1.0"
+description = "AI Text-to-Image Studio using segmind/tiny-sd"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "diffusers==0.33.0",
+    "torch==2.2.2",
+    "transformers==4.43.4",
+    "accelerate==0.34.0",
+    "safetensors==0.4.3",
+    "Pillow==10.4.0",
+    "streamlit==1.36.0",
+    "pytest==8.3.3",
+    "numpy==1.26.4",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"

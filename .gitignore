@@ -1,0 +1,37 @@
+# Python / virtual environment
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+.env
+.venv/
+
+# pytest cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Hugging Face cache (project-local)
+.hf_cache/
+
+# Model weights / checkpoints
+*.bin
+*.safetensors
+*.pt
+*.ckpt
+models/
+
+# Generated outputs
+outputs/*
+!outputs/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+# Additional local caches
+.cache/
+.huggingface/
