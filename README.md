@@ -125,7 +125,7 @@ numpy==1.26.4
 
 ```bash
 # 1. Create a project virtual environment (do not reuse Task 01's .venv)
-cd /Users/hrishabh/Coding/prodigy-genai-task-02-image-generation
+cd imageforge-text-to-image-studio
 python3.12 -m venv .venv
 source .venv/bin/activate
 
@@ -194,16 +194,7 @@ python -m pytest tests/ -v
 
 ### Verified results
 
-All tests pass offline:
-
-```
-test_config.py .....                                                              [ 16%]
-test_generation.py .......                                                        [ 38%]
-test_model_manager.py ...                                                         [ 60%]
-...
-```
-
-(See the QA section below for the exact run output recorded during development.)
+Verified automated-test run: **43 passed in 3.65 seconds**. Runtime varies by machine. These offline tests use mocked inference and do not download model weights.
 
 Tests cover:
 
